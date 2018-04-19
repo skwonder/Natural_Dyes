@@ -1,0 +1,72 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+body{
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background:#ffe531;
+ -webkit-animation:colour 10s linear infinite;
+ -moz-animation:colour 10s linear infinite;
+}
+@-webkit-keyframes colour{
+  0%{
+  background: #ffe534;
+}
+40%{
+  background: #fca428;
+}
+80%{
+  background: #ffdf2c;
+}
+100%{
+  background: #f6bd16;
+}
+}
+
+@-moz-keyframes colour{
+  0%{
+  background: #ffe945;
+}
+40%{
+  background: #ffdf2c;
+}
+80%{
+  background: #f6bd16;
+}
+100%{
+  background: #fca428;
+}
+}
+h1{
+  margin-top:100px;
+  margin-bottom: 50px;
+  font-size:2em;
+  }
+/*.example {
+  font-family: sans-serif;
+  padding: 50px;
+  }
+.example p {
+  line-height: 1.6;
+  margin-bottom: 25px;
+}*/
+#wrap{
+  width: 80%;
+  margin: 50px auto;
+  padding: 12px 5%;
+  position: relative;
+  }
+.inner{
+  position: relative;
+  z-index: 10;
+  }
+#wrap:after{
+  content: "\f087";
+  position: absolute;
+  color: lightblue;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 -200px;
+  z-index: 1;
+}
